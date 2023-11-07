@@ -7,7 +7,7 @@ import java.net.URISyntaxException;
 @ServerEndpoint(value = "/", subprotocols = {"graphql-ws"})
 public class ClientToProxy {
 
-    private final String TARGET_URL = "ws://10.252.22.67:8081/subscribeToGroup/";
+    private final String TARGET_URL = "ws://10.10.22.67:8081/subscribe/";
     private Session clientSession;
 
     private static WebSocketContainer webSocketContainer;
